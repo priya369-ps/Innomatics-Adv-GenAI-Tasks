@@ -34,7 +34,7 @@ Note: The first run may take time to download the required models (~1GB total).
 - **Vector Store**: ChromaDB for storing document embeddings
 - **Embeddings**: HuggingFace sentence-transformers for creating embeddings
 - **Retrieval**: LangChain for retrieving relevant documents
-- **Generation**: HuggingFace GPT-2 for generating answers based on retrieved context
+- **Generation**: HuggingFace FLAN-T5-small for clean instruction-following answers
 - **Interface**: Streamlit for user interaction
 
 ## Workflow
