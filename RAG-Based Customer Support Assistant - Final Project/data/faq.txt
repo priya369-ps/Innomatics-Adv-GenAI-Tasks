@@ -1,0 +1,14 @@
+Q: How do I reset my password?
+A: To reset your password, go to the login page and click on "Forgot Password". Enter your email address and follow the instructions sent to your email.
+
+Q: What are your business hours?
+A: Our customer support is available from 9 AM to 5 PM, Monday to Friday, in your local time zone.
+
+Q: How can I contact support?
+A: You can contact us via email at support@example.com, through our live chat on the website, or by calling our hotline at 1-800-123-4567.
+
+Q: Do you offer refunds?
+A: Refunds are available within 30 days of purchase. Please provide your order number and reason for refund.
+
+Q: How do I update my account information?
+A: Log in to your account, go to settings, and update your information there.
