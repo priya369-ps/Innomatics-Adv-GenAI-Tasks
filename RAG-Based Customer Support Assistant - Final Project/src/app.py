@@ -4,7 +4,6 @@ from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.llms import HuggingFacePipeline
 from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
 from transformers import pipeline
 from dotenv import load_dotenv
 
@@ -26,23 +25,10 @@ def main():
     )
     llm = HuggingFacePipeline(pipeline=pipe)
 
-    prompt_template = """
-Use the following context to answer the question in 3 sentences or less.
-If the answer is not contained in the context, say you don't know.
-
-Context:
-{context}
-
-Question: {question}
-Answer:
-"""
-    prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
-
     qa_chain = RetrievalQA.from_chain_type(
         llm,
         retriever=vectorstore.as_retriever(),
         chain_type="stuff",
-        prompt=prompt,
     )
 
     query = st.text_input("Ask a question:")
