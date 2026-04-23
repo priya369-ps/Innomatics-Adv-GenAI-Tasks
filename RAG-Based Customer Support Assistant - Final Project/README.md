@@ -7,7 +7,7 @@ This is a Retrieval-Augmented Generation (RAG) based customer support assistant 
 - Loads customer support documents from a knowledge base
 - Splits documents into chunks and creates embeddings using HuggingFace models
 - Stores embeddings in a vector database (ChromaDB)
-- Provides a query interface to answer customer questions using retrieved relevant information and a local LLM (GPT-2)
+- Provides a query interface to answer customer questions using retrieved relevant information and a local instruction-tuned LLM (FLAN-T5-small)
 
 ## Setup
 
@@ -43,4 +43,4 @@ Note: The first run may take time to download the required models (~1GB total).
 2. Embeddings are created using HuggingFace sentence-transformers.
 3. Chunks are stored in ChromaDB vector store.
 4. User query is embedded and similar documents are retrieved.
-5. Retrieved documents are passed to GPT-2 LLM with the query to generate an answer.
+5. Retrieved documents are passed to FLAN-T5-small with the query to generate an answer.
