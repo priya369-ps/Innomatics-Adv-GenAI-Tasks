@@ -16,15 +16,17 @@ This is a Retrieval-Augmented Generation (RAG) based customer support assistant 
    pip install -r requirements.txt
    ```
 
-2. Build the vector store:
+2. Build the vector store (this will download the embedding model on first run):
    ```
    python scripts/build_vector_store.py
    ```
 
-3. Run the application:
+3. Run the application (this will download the language model on first run):
    ```
    streamlit run src/app.py
    ```
+
+Note: The first run may take time to download the required models (~1GB total).
 
 ## Architecture
 
